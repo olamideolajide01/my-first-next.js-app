@@ -26,7 +26,7 @@ export const getStaticProps = async (context) => {
   };
 };
 
-const PhotoDetails = ({ user }) => {
+const UserDetails = ({ user }) => {
   return (
     <div className="max-w-fit align-middle">
       <h1 className="text-[30px] mt-7">Single Photo</h1>
@@ -40,4 +40,4 @@ const PhotoDetails = ({ user }) => {
   );
 };
 
-export default PhotoDetails;
+export default UserDetails;
