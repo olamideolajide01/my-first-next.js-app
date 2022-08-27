@@ -26,11 +26,12 @@ export const getStaticProps = async (context) => {
   };
 };
 
-const photoDetails = ({ user }) => {
+const PhotoDetails = ({ user }) => {
   return (
     <div className="max-w-fit align-middle">
       <h1 className="text-[30px] mt-7">Single Photo</h1>
-      <h2 className="mt-2">Name: {user.name.toUpperCase()}</h2>
+
+      <h2 className="mt-2">Name: {user.name || "default name"}</h2>
       <Image src={user.avatar_url} width="200" height="200" alt="" />
       <div>
         <Link href={user.url}>{user.url}</Link>
@@ -39,4 +40,4 @@ const photoDetails = ({ user }) => {
   );
 };
 
-export default photoDetails;
+export default PhotoDetails;
