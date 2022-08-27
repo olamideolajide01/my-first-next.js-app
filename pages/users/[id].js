@@ -38,8 +38,10 @@ const UserDetails = ({ user }) => {
       <h2 className="mt-2">Name: {user.name || "default name"}</h2>
       <Image src={user.avatar_url} width="200" height="200" alt="" />
       <div>
-        <Link href={user.url}>{user.url}</Link>
+        <h3>Followers:{user.followers}</h3>
+        <h3>Following:{user.following}</h3>
       </div>
+      <h4>Type:{user.type}</h4>
     </div>
   );
 };
