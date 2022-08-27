@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -29,6 +30,9 @@ export const getStaticProps = async (context) => {
 const UserDetails = ({ user }) => {
   return (
     <div className="max-w-fit align-middle">
+      <Head>
+        <title>Tutorial on Next.js | {user.name}</title>
+      </Head>
       <h1 className="text-[30px] mt-7">Single Photo</h1>
 
       <h2 className="mt-2">Name: {user.name || "default name"}</h2>

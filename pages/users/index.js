@@ -15,9 +15,9 @@ const Post = ({ photos }) => {
   return (
     <div>
       <Head>
-        <title>Tutorial on Next.js | All Photos</title>
+        <title>Tutorial on Next.js | All Users</title>
       </Head>
-      <h1 className="mt-5 text-[30px] font-bold  px-7">All Photos</h1>
+      <h1 className="mt-5 text-[30px] font-bold  px-7">All Users</h1>
       <div className="grid lg:grid-cols-3 lg:gap-9 gap-6  md:grid-cols-2 grid-cols-1 px-7">
         {photos.map((user) => (
           <div key={user.id}>
